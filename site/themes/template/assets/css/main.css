@@ -1018,3 +1018,59 @@ main#content > .home-content {
     height: 180px;
   }
 }
+/* 검은 배경 위로 흐르는 반사광 */
+.profile-hero::before {
+  content: "";
+  position: absolute;
+  inset: -70%;
+  z-index: -1;
+  pointer-events: none;
+
+  background: linear-gradient(
+    115deg,
+    transparent 33%,
+    rgba(255, 255, 255, 0.03) 39%,
+    rgba(255, 255, 255, 0.18) 45%,
+    rgba(255, 255, 255, 0.04) 51%,
+    transparent 58%
+  );
+
+  filter: blur(15px);
+  animation: profile-satin 10s ease-in-out infinite alternate;
+}
+
+/* 은은한 대각선 질감 */
+.profile-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+
+  background: repeating-linear-gradient(
+    125deg,
+    transparent 0,
+    transparent 72px,
+    rgba(255, 255, 255, 0.025) 73px,
+    transparent 74px
+  );
+}
+
+@keyframes profile-satin {
+  from {
+    transform: translateX(-17%) rotate(-5deg);
+  }
+
+  to {
+    transform: translateX(17%) rotate(5deg);
+  }
+}
+
+/* 움직임 줄이기 설정 */
+@media (prefers-reduced-motion: reduce) {
+  .profile-hero::before {
+    animation: none;
+    transform: none;
+    opacity: 0.8;
+  }
+}
