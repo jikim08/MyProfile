@@ -34,7 +34,7 @@ title = "Kim JiHoo"
     </script>
   """
 
-  description = "공부한 내용과 만들어가는 프로젝트를 기록합니다."
+  description = "AI와 웹을 공부하는 김지후입니다."
   footer = "Kim JiHoo"
   metaKeywords = ["김지후", "개발", "프로젝트", "공부 기록"]
   showBackToTopButton = true # true or false for "back to top" button on posts and pages
