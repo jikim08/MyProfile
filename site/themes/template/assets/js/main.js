@@ -1,17 +1,5 @@
 document.addEventListener('DOMContentLoaded', ready, false);
 
-const THEME_PREF_STORAGE_KEY = "theme-preference";
-const THEME_TO_ICON_CLASS = {
-    'dark': 'feather-moon',
-    'light': 'feather-sun'
-};
-const THEME_TO_ICON_TEXT_CLASS = {
-    'dark': 'Dark mode',
-    'light': 'Light mode'
-};
-let toggleIcon = '';
-let darkThemeCss = '';
-
 const HEADING_TO_TOC_CLASS = {
     'H1': 'level-1',
     'H2': 'level-2',
@@ -21,7 +9,6 @@ const HEADING_TO_TOC_CLASS = {
 
 function ready() {
     feather.replace({ 'stroke-width': 1, width: 20, height: 20 });
-    setThemeByUserPref();
 
     if (document.querySelector('main#content > .container') !== null &&
         document.querySelector('main#content > .container').classList.contains('post')) {
