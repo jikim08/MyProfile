@@ -1,7 +1,24 @@
 {{ define "main" }}
-    {{ if eq .Type "page" }}
-        {{- partial "page.html" . -}}
+    {{ if and .IsSection (eq .Section "projects") }}
+
+        <section class="profile-hero projects-hero">
+            <h1>{{ .Title }}</h1>
+            <p>연구와 개발을 통해 만들어온 프로젝트를 소개합니다.</p>
+        </section>
+
+        <section class="projects-body">
+            <div class="post-content">
+                {{ .Content }}
+            </div>
+
+            {{ if .Site.Params.ShowBackToTopButton }}
+                {{ partial "back-to-top.html" . }}
+            {{ end }}
+        </section>
+
+    {{ else if eq .Type "page" }}
+        {{ partial "page.html" . }}
     {{ else }}
-        {{- partial "list.html" . -}}
+        {{ partial "list.html" . }}
     {{ end }}
 {{ end }}

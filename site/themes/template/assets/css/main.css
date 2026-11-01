@@ -1074,3 +1074,43 @@ main#content > .home-content {
     opacity: 0.8;
   }
 }
+
+/* Projects: 화면 절반 높이의 배너 */
+.profile-hero.projects-hero {
+  min-height: 50svh;
+  padding: 48px 24px;
+  align-items: center;
+  text-align: center;
+}
+
+.projects-hero h1 {
+  margin: 0;
+  color: #f5f5f5;
+  font-size: clamp(2.2rem, 5vw, 3.5rem);
+  font-weight: 700;
+  letter-spacing: -0.04em;
+}
+
+.projects-hero p {
+  max-width: 36rem;
+  margin: 20px 0 0;
+  color: #b8bec8;
+  font-size: 1rem;
+  line-height: 1.7;
+  word-break: keep-all;
+}
+
+/* 배너 아래의 프로젝트 목록 */
+.projects-body {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 48px 24px 80px;
+  color: #20242b;
+}
+
+.projects-body .post-content {
+  line-height: 1.85;
+  overflow-wrap: anywhere;
+}
