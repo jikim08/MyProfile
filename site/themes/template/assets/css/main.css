@@ -865,3 +865,144 @@ body,
 .home-content h2 {
   font-weight: 700;
 }
+/* =========================
+   본문: 흰색 배경
+   ========================= */
+
+body:has(.profile-hero) {
+  margin-left: 0;
+  margin-right: 0;
+  background: #ffffff;
+  color: #20242b;
+}
+
+main#content:has(> .profile-hero) {
+  width: 100%;
+  margin-top: 50px;
+  padding: 0;
+  background: #ffffff;
+}
+
+main#content > .home-content {
+  padding-inline: 24px;
+  color: #20242b;
+  background: #ffffff;
+}
+
+
+/* =========================
+   상단 프로필: 검은색 배경
+   ========================= */
+
+.profile-hero {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  box-sizing: border-box;
+
+  min-height: 540px;
+  padding: 64px 24px 56px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  color: #f5f5f5;
+  background: #101114;
+  border-bottom: 1px solid #30343b;
+}
+
+/* 뒤에서 움직이는 은은한 회색빛 */
+.profile-hero::before {
+  content: "";
+  position: absolute;
+  inset: -20%;
+  z-index: -1;
+  pointer-events: none;
+
+  background:
+    radial-gradient(
+      ellipse at 25% 35%,
+      rgba(110, 118, 138, 0.45),
+      transparent 55%
+    ),
+    radial-gradient(
+      ellipse at 80% 75%,
+      rgba(80, 88, 104, 0.35),
+      transparent 50%
+    );
+
+  animation: profile-glow 12s ease-in-out infinite alternate;
+}
+
+/* 프로필 내부 배치 */
+.profile-hero .home-about {
+  margin: 0;
+  padding: 0;
+}
+
+.profile-hero .home-about h1 {
+  color: #f5f5f5;
+}
+
+.profile-hero .home-about h2 {
+  color: #b8bec8;
+}
+
+/* 프로필 사진 */
+.profile-hero .avatar img {
+  box-sizing: border-box;
+  border: 5px solid #454b56;
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.3);
+}
+
+/* SNS */
+.profile-hero .gk-social-icons {
+  margin-top: 24px;
+}
+
+.profile-hero .gk-social-icons-list {
+  margin: 0;
+}
+
+.profile-hero .gk-social-icon,
+.profile-hero .gk-social-icon a,
+.profile-hero .gk-social-icon a:visited {
+  color: #d9dee7;
+  fill: #d9dee7;
+}
+
+.profile-hero .gk-social-icon a:hover {
+  color: #ffffff;
+  fill: #ffffff;
+}
+
+/* 배경빛 이동 */
+@keyframes profile-glow {
+  from {
+    transform: translate(-3%, -2%) scale(1);
+    opacity: 0.65;
+  }
+
+  to {
+    transform: translate(3%, 2%) scale(1.12);
+    opacity: 1;
+  }
+}
+
+/* 모바일 */
+@media (max-width: 760px) {
+  .profile-hero {
+    min-height: 460px;
+    padding: 48px 20px;
+  }
+}
+
+/* 기기의 움직임 줄이기 설정 반영 */
+@media (prefers-reduced-motion: reduce) {
+  .profile-hero::before {
+    animation: none;
+    transform: none;
+    opacity: 0.8;
+  }
+}

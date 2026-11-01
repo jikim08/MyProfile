@@ -1,4 +1,5 @@
 {{ define "main" }}
+<div class="profile-hero">
 <section class="home-about">
 	<div class="avatar">
         {{ if isset .Site.Params "avatarurl" }}
@@ -28,7 +29,7 @@
     </ul>
 </div>
 {{ end }}
-
+</div>
 {{ if (or
     (and (fileExists "content/_index.md") .Content)
     (fileExists "content/index-about.md")) }}
