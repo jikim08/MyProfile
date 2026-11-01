@@ -67,22 +67,10 @@ title = "Kim JiHoo"
     weight = 3
 
   [[menu.main]]
-    name = "Tags"
-    pre = "<span data-feather='tag'></span>"
-    url = "/tags/"
-    weight = 4
-
-  [[menu.main]]
     identifier = "github"
     pre = "<span data-feather='github'></span>"
     url = "https://github.com/jikim08"
     weight = 5
-
-  [[menu.main]]
-    identifier = "rss"
-    pre = "<span data-feather='rss'></span>"
-    url = "/index.xml"
-    weight = 7
 
 [markup]
   [markup.tableOfContents]
