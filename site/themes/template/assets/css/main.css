@@ -836,3 +836,25 @@ table td {
     margin-top: 36px;
   }
 }
+
+html,
+body,
+.home-about,
+.home-content {
+  font-family: "SUIT Variable", sans-serif;
+}
+
+.home-content {
+  font-size: 16px;
+  letter-spacing: -0.015em;
+}
+
+.home-content p,
+.home-content li {
+  font-weight: 400;
+}
+
+.home-content h1,
+.home-content h2 {
+  font-weight: 700;
+}
