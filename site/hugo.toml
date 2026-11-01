@@ -1,17 +1,17 @@
-baseURL = "https://gokarna-hugo.netlify.app"
-defaultContentLanguage = "en"
+baseURL = "https://jikim08.github.io/MyProfile/"
+defaultContentLanguage = "ko"
 enableEmoji = true
 enableRobotsTXT = true
-locale = "en"
+locale = "ko"
 # Choose one of emacs, trac or perldoc
 pygmentsStyle = "monokai"
 
-title = "Gokarna"
+title = "Kim JiHoo"
 
 [params]
-  avatarAltText = "avatar"
+  avatarAltText = "프로필 이미지"
   avatarSize = "size-m"
-  avatarURL = "/images/avatar.webp"
+  avatarURL = "/images/KimJiHoo_profile.jpg"
 
   customHeadHTML = """
     <!-- KaTeX -->
@@ -34,19 +34,16 @@ title = "Gokarna"
     </script>
   """
 
-  description = "Sky above, sand below and peace within"
-  footer = "The Marauders"
-  metaKeywords = ["blog", "gokarna", "hugo"]
+  description = "공부한 내용과 만들어가는 프로젝트를 기록합니다."
+  footer = "Kim JiHoo"
+  metaKeywords = ["김지후", "개발", "프로젝트", "공부 기록"]
   showBackToTopButton = true # true or false for "back to top" button on posts and pages
 
   socialIcons = [
-    {name = "twitter", url = "https://example.com"},
-    {name = "linkedin", url = "https://example.com"},
-    {name = "stackoverflow", url = "https://example.com"},
-    {name = "dribbble", url = "https://example.com"},
-    {name = "instagram", url = "https://example.com"},
-    {name = "twitch", url = "https://example.com"},
-    {name = "email", url = "mailto:example@example.com"}
+    {name = "github", url = "https://github.com/jikim08"},
+    {name = "instagram", url = "https://www.instagram.com/jihoo_0x76"},
+    {name = "tistory", url = "https://jikim08.tistory.com"},
+    {name = "email", url = "mailto:jikim08@jbnu.ac.kr"}
   ]
 
 [menu]
@@ -77,14 +74,8 @@ title = "Gokarna"
   [[menu.main]]
     identifier = "github"
     pre = "<span data-feather='github'></span>"
-    url = "https://github.com/gokarna-theme/gokarna-hugo"
+    url = "https://github.com/jikim08"
     weight = 5
-
-  [[menu.main]]
-    identifier = "buymeacoffee"
-    pre = "<span data-feather='coffee'></span>"
-    url = "https://www.buymeacoffee.com/avijitgupta"
-    weight = 6
 
   [[menu.main]]
     identifier = "rss"
