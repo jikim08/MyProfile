@@ -837,6 +837,13 @@ table td {
   }
 }
 
+  .home-content > ul:first-of-type strong {
+  display: block;
+  margin-bottom: 12px;
+  font-size: 1.08rem;
+  font-weight: 700;
+}
+
 html,
 body,
 .home-about,
