@@ -1416,3 +1416,30 @@ main#content > .home-portfolio {
   list-style-position: inside;
   padding-left: 0;
 }
+
+/* 홈 본문 섹션 구분선 */
+.home-content hr {
+  width: 300px;
+  height: 1px;
+  margin: 150px auto;
+  border: 0;
+  background: linear-gradient(
+    to right,
+    transparent,
+    #aeb6c2,
+    transparent
+  );
+}
+
+/* 기존 제목 여백과 중복되지 않도록 조정 */
+.home-content hr + h1,
+.home-content hr + h2 {
+  margin-top: 0;
+}
+
+@media (max-width: 760px) {
+  .home-content hr {
+    width: 120px;
+    margin: 56px auto;
+  }
+}
