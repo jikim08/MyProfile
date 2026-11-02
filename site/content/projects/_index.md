@@ -3,10 +3,10 @@ title: "Projects"
 type: page
 ---
 
-1. **LPPLS 모델 전환 및 최적화**  
+1. **[LPPLS 모델 전환 및 최적화](/projects/lppls/)**  
   연세대학교 핀테크센터의 MATLAB 기반 LPPLS 모델을 C++로 전환하고, 유전알고리즘을 활용해 최적화했습니다.
 
-2. **[JAVICE 홈페이지 제작](/projects/JAVICE)**  
+2. **[JAVICE 홈페이지 제작](/projects/JAVICE/)**  
   전북대학교 웹개발 동아리 JAVICE의 홈페이지를 제작했습니다.
 
 3. **[Java Swing 피아노 리듬게임](/projects/piano_rhythm_game/)**  
