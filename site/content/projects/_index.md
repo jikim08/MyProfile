@@ -12,7 +12,7 @@ type: page
 3. **[Java Swing 피아노 리듬게임](/projects/piano_rhythm_game/)**  
   Java Swing을 활용해 피아노 리듬게임을 제작했습니다.
 
-4. **egoEMOTION 기반 생체신호·IMU 결합 연구**  
+4. **[egoEMOTION 기반 생체신호·IMU 결합 연구](/projects/egoemotion/)**  
   ETRI 용역에서 생체신호·IMU 결합 인코더를 제작하고, 관련 IMU-Aware Gated Residual 논문에 제1저자로 참여했습니다.
 
 5. **운전자 긴급 대응 안전 시스템 · 진행 중**  
