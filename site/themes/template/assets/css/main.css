@@ -1114,3 +1114,300 @@ main#content > .home-content {
   line-height: 1.85;
   overflow-wrap: anywhere;
 }
+/* 홈 본문 전용 레이아웃 */
+main#content > .home-portfolio {
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 96px 40px 100px;
+  color: #20242b;
+  text-align: left;
+  line-height: 1.8;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+
+.home-portfolio,
+.home-portfolio * {
+  box-sizing: border-box;
+}
+
+.home-portfolio p {
+  margin: 0;
+}
+
+.home-portfolio h2,
+.home-portfolio h3 {
+  margin: 0;
+  color: #20242b;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+}
+
+.home-portfolio .pf-label {
+  margin-bottom: 20px;
+  color: #637080;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+}
+
+/* 소개: 큰 문장과 짧은 설명 */
+.home-portfolio .pf-intro-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 64px;
+}
+
+.home-portfolio .pf-intro h2 {
+  margin: 0;
+  font-size: clamp(32px, 4vw, 48px);
+  line-height: 1.35;
+}
+
+.home-portfolio .pf-intro h2 span {
+  color: #385ed0;
+}
+
+.home-portfolio .pf-intro-copy {
+  min-width: 0;
+  color: #626974;
+  font-size: 15px;
+}
+
+.home-portfolio .pf-intro-copy p + p {
+  margin-top: 18px;
+}
+
+/* 섹션 제목 */
+.home-portfolio .pf-interests,
+.home-portfolio .pf-experience {
+  margin-top: 100px;
+}
+
+.home-portfolio .pf-section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 24px;
+  margin-bottom: 30px;
+}
+
+.home-portfolio .pf-section-heading .pf-label {
+  margin-bottom: 10px;
+}
+
+.home-portfolio .pf-section-heading h2 {
+  margin: 0;
+  font-size: 28px;
+  line-height: 1.4;
+}
+
+.home-portfolio .pf-section-note {
+  color: #7b828c;
+  font-size: 13px;
+}
+
+/* 관심 분야 카드 */
+.home-portfolio .pf-card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.home-portfolio .pf-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: 30px 24px 24px;
+  border: 1px solid #e8eaef;
+  border-radius: 20px;
+  background: #f8f9fb;
+}
+
+.home-portfolio .pf-icon {
+  width: 32px;
+  height: 32px;
+  margin-bottom: 28px;
+  color: #385ed0;
+}
+
+.home-portfolio .pf-card-category {
+  margin-bottom: 10px;
+  color: #7b828c;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+}
+
+.home-portfolio .pf-card h3 {
+  margin: 0 0 16px;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.home-portfolio .pf-card-copy {
+  flex: 1;
+  color: #626974;
+  font-size: 14px;
+  line-height: 1.85;
+}
+
+.home-portfolio .pf-card-foot {
+  display: block;
+  margin-top: 28px;
+  padding-top: 18px;
+  border-top: 1px solid #e3e6ec;
+  color: #747c88;
+  font-size: 11px;
+}
+
+/* 경험 타임라인 */
+.home-portfolio .pf-timeline {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.home-portfolio .pf-timeline-item {
+  position: relative;
+  display: grid;
+  grid-template-columns: 170px minmax(0, 1fr);
+  gap: 24px;
+  margin: 0;
+  padding: 0 0 36px 30px;
+  border-left: 1px solid #dde2eb;
+}
+
+.home-portfolio .pf-timeline-item:last-child {
+  padding-bottom: 0;
+}
+
+.home-portfolio .pf-timeline-item::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: -5px;
+  width: 9px;
+  height: 9px;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  background: #385ed0;
+}
+
+.home-portfolio .pf-period {
+  padding-top: 2px;
+  color: #7b828c;
+  font-size: 12px;
+  font-variant-numeric: tabular-nums;
+}
+
+.home-portfolio .pf-timeline-copy h3 {
+  margin: 0 0 8px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.home-portfolio .pf-timeline-copy p {
+  max-width: 600px;
+  color: #626974;
+  font-size: 14px;
+}
+
+/* 다음 목표 */
+.home-portfolio .pf-next {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  margin-top: 100px;
+  padding: 44px;
+  border-radius: 24px;
+  background: #f1f4fa;
+}
+
+.home-portfolio .pf-next h2 {
+  margin: 0;
+  font-size: clamp(25px, 3vw, 34px);
+  line-height: 1.45;
+}
+
+.home-portfolio .pf-next-copy {
+  max-width: 460px;
+  margin-top: 18px;
+  color: #626974;
+  font-size: 14px;
+}
+
+.home-portfolio .pf-button {
+  display: inline-flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  padding: 15px 22px;
+  border: 1px solid #20242b;
+  border-radius: 10px;
+  background: #20242b;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.home-portfolio .pf-button:hover {
+  background: #385ed0;
+  border-color: #385ed0;
+  color: #ffffff;
+}
+
+.home-portfolio .pf-button:focus-visible {
+  outline: 3px solid #385ed0;
+  outline-offset: 5px;
+}
+
+/* 모바일 */
+@media (max-width: 760px) {
+  main#content > .home-portfolio {
+    padding: 64px 24px;
+  }
+
+  .home-portfolio .pf-intro-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .home-portfolio .pf-card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .home-portfolio .pf-interests,
+  .home-portfolio .pf-experience {
+    margin-top: 64px;
+  }
+
+  .home-portfolio .pf-section-heading {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .home-portfolio .pf-section-heading h2 {
+    font-size: 25px;
+  }
+
+  .home-portfolio .pf-timeline-item {
+    grid-template-columns: 1fr;
+    gap: 8px;
+    padding-left: 24px;
+  }
+
+  .home-portfolio .pf-next {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 28px;
+    margin-top: 64px;
+    padding: 30px 24px;
+  }
+}
