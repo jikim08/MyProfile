@@ -1503,3 +1503,38 @@ main#content > .home-content {
     border-top: 1px solid #e5e1da;
   }
 }
+/* About Me 제목과 인용문 사이 */
+.home-content #about-me {
+  margin-bottom: 36px;
+}
+
+/* 대표 인용문 */
+.home-content #about-me + p {
+  margin: 0 auto 64px;
+  color: #292d36;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(26px, 4vw, 40px);
+  line-height: 1.5;
+  letter-spacing: -0.025em;
+  text-align: center;
+}
+
+/* 작은 금색 따옴표 */
+.home-content #about-me + p::before {
+  content: "";
+  display: block;
+  width: 36px;
+  height: 2px;
+  margin: 24px auto 0;
+  background: #b79a68;
+}
+
+/* 인용문 아래 짧은 선 */
+.home-content #about-me + p::after {
+  content: "";
+  display: block;
+  width: 36px;
+  height: 2px;
+  margin: 24px auto 0;
+  background: #b79a68;
+}
