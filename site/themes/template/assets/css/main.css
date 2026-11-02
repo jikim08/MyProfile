@@ -772,6 +772,7 @@ table td {
   line-height: 1.85;
   word-break: keep-all;
   overflow-wrap: anywhere;
+    text-align: center;
 }
 
 .home-content h1 {
@@ -1410,4 +1411,8 @@ main#content > .home-portfolio {
     margin-top: 64px;
     padding: 30px 24px;
   }
+}
+.home-content ul {
+  list-style-position: inside;
+  padding-left: 0;
 }
