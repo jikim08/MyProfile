@@ -75,3 +75,5 @@ IMU 인지형 게이트 잔차 융합**
 using Wearable Physiological Signals under Motion*
 
 제1저자로 참여하여 모델 구현과 실험 결과를 논문으로 정리했습니다.
+
+[논문 원문 보기](/files/egoemotion-IGRF.pdf)
