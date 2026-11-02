@@ -1114,26 +1114,3 @@ main#content > .home-content {
   line-height: 1.85;
   overflow-wrap: anywhere;
 }
-/* 홈 본문 스크롤 등장 효과 */
-.home-content .scroll-reveal {
-  opacity: 0;
-  transform: translateY(28px);
-  transition:
-    opacity 0.7s ease,
-    transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
-}
-
-.home-content .scroll-reveal.is-visible,
-.home-content .scroll-reveal:focus-within {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* 움직임 줄이기 설정 */
-@media (prefers-reduced-motion: reduce) {
-  .home-content .scroll-reveal {
-    opacity: 1;
-    transform: none;
-    transition: none;
-  }
-}
