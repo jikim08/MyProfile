@@ -15,5 +15,5 @@ type: page
 4. **[egoEMOTION 기반 생체신호·IMU 결합 연구](/projects/egoemotion/)**  
   ETRI 용역에서 생체신호·IMU 결합 인코더를 제작하고, 관련 IMU-Aware Gated Residual 논문에 제1저자로 참여했습니다.
 
-5. **운전자 긴급 대응 안전 시스템 · 진행 중**  
+5. **[운전자 긴급 대응 안전 시스템 · 진행 중](/projects/driver-safety/)**  
   DH오토웨어와 연계하여 운전자 영상과 생체신호를 기반으로 이상상태를 감지하고 긴급 대응하는 시스템을 개발하고 있습니다.
