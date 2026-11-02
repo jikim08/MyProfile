@@ -9,7 +9,7 @@ type: page
 2. **JAVICE 홈페이지 제작**  
   전북대학교 웹개발 동아리 JAVICE의 홈페이지를 제작했습니다.
 
-3. **Java Swing 피아노 리듬게임**  
+3. **[Java Swing 피아노 리듬게임](/projects/piano_rhythm_game.md)**  
   Java Swing을 활용해 피아노 리듬게임을 제작했습니다.
 
 4. **egoEMOTION 기반 생체신호·IMU 결합 연구**  
