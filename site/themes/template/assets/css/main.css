@@ -1446,3 +1446,60 @@ main#content > .home-portfolio {
 main#content > .home-content {
   padding-bottom: 180px;
 }
+
+/* 수상 경력 */
+.home-content #수상-경력 + ul {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0;
+
+  max-width: 800px;
+  margin: 40px auto 0;
+  padding: 40px 0;
+
+  list-style: none;
+  border-top: 1px solid #e5e1da;
+  border-bottom: 1px solid #e5e1da;
+}
+
+.home-content #수상-경력 + ul > li {
+  margin: 0;
+  padding: 12px 24px;
+  color: #666b73;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.home-content #수상-경력 + ul > li + li {
+  border-left: 1px solid #e5e1da;
+}
+
+.home-content #수상-경력 + ul strong {
+  display: block;
+  margin-bottom: 12px;
+  color: #94743e;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+}
+
+/* Markdown 줄바꿈 대신 위 여백으로 간격 처리 */
+.home-content #수상-경력 + ul strong + br {
+  display: none;
+}
+
+@media (max-width: 760px) {
+  .home-content #수상-경력 + ul {
+    grid-template-columns: 1fr;
+    padding: 12px 0;
+  }
+
+  .home-content #수상-경력 + ul > li {
+    padding: 28px 16px;
+  }
+
+  .home-content #수상-경력 + ul > li + li {
+    border-left: 0;
+    border-top: 1px solid #e5e1da;
+  }
+}
