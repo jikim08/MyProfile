@@ -80,3 +80,6 @@ title = "Kim JiHoo"
 
 [minify]
     minifyOutput = true
+  
+[markup.goldmark.renderer]
+  unsafe = true
