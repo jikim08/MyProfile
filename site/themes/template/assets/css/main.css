@@ -1601,3 +1601,32 @@ main#content > .home-content {
     font-size: 13px;
   }
 }
+/* 공통 배너 아래의 프로젝트 상세 본문 */
+.project-detail-body .post.container {
+  display: block;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+}
+
+.project-detail-body .project-list-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 0;
+  margin-bottom: 12px;
+  color: #686f78;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.project-detail-body .project-list-link:hover {
+  color: #94743e;
+}
+
+.project-detail-body .post-header-section h1 {
+  margin-top: 12px;
+  font-size: clamp(28px, 4vw, 36px);
+  line-height: 1.4;
+  letter-spacing: -0.04em;
+}
