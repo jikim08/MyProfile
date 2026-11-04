@@ -9,6 +9,7 @@ DH오토웨어와 연계하여 운전자의 영상과 생체신호를 바탕으�
 - **진행 형태:** 기업 연계 팀 프로젝트
 - **사용 기술:** Python · Unity · C# · Raspberry Pi · ECG·PPG 센서
 - **담당 분야:** 생체신호 분석 및 Unity 기반 긴급 대응 시뮬레이션
+- **소스 코드:** [GitHub](https://github.com/xofls01/multimodal-driver-monitoring-ecall)
 - **진행 상태:** 진행 중
 
 ## 프로젝트 소개
